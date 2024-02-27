@@ -21,6 +21,7 @@ def postInput():
     x=insertValues['x']
     input = np.array([[x]])
     # 預測
-    result = model.predict(input)
+    #result = model.predict(input)
+    result = input
 
     return jsonify({'result': str(result)})
